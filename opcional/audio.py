@@ -1,6 +1,7 @@
 import os
 import subprocess
 import sys
+  #evitar la creación de archivos .pyc
 sys.dont_write_bytecode = True
 
 # Importamos tu script audio2.0.py renombrado a audio2_0.py
@@ -32,8 +33,8 @@ def find_5_1_mp4_files_and_convert(directory):
 # ==================== SCRIPT PRINCIPAL ====================
 if __name__ == "__main__":
     # Lista de carpetas compartidas
-    shared_folders = ["carta", "demas", "Documentales", "Estrenos", "pelis", "Public", "Series"]
-    base_path = r"\\192.168.1.50"
+    shared_folders = ["gaot", "perros"]
+    base_path = r"\\192.168.2.40"
 
     for folder in shared_folders:
         network_path = os.path.join(base_path, folder)
